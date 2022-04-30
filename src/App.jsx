@@ -7,7 +7,8 @@ import pokedex from './public/pokedex.png'
 import pokeapi from './services/pokeapi.js';
 import { useEffect } from 'react';
 
-import Pagination from './Pagination.jsx';
+import Pagination from './components/Pagination/Pagination';
+
 
 const LIMIT = 20;
 
