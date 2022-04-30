@@ -33,35 +33,36 @@ const App = () =>  {
     //   }
     // }
 
-    pokeapi.get(`pokemon/?${text}limit=${LIMIT}&offset=${offset}`)
-    // pokeapi.get(`pokemon/?${text}limit=${LIMIT}&offset=${offset}`)
-      .then((response) => setPokemons(response.data))
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-     });
+   
+
+      pokeapi.get(`pokemon/?limit=${LIMIT}&offset=${offset}`)
+      // pokeapi.get(`pokemon/?${text}limit=${LIMIT}&offset=${offset}`)
+        .then((response) => setPokemons(response.data))
+        .catch((err) => {
+          console.error("ops! ocorreu um erro" + err);
+       });
+    
+
   }, [text, offset])
   
   return (
     <Container>
       <Content>
          <Header image={pokedex} />
-         <Form> 
+         {/* <Form> 
 
         <Input
           placeholder="Search your Pokémon!"
           type="text"
           value={text}
-          // onChange={(search) => setText(search.target)}
+          onChange={(search) => setText(search.target.value)}
         /> 
-        {/* <Input
+        <Input
           placeholder="E-mail"
           type="text"
           name="email"
-        />  */}
-         </Form>
-
-
-        <h1> Pokedex </h1>
+        /> 
+         </Form> */}
         
         <Gallery pokelist={pokemons.results} />
         {/* {pokemons && ( reutnr Pagination)} */}
