@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Content } from './styles.js';
+import { Content, Image, Types, Type, Name } from './styles.js';
 import pokeapi from '../../services/pokeapi.js';
 
 const Card = ({pokemon}) => {
@@ -17,13 +17,16 @@ const Card = ({pokemon}) => {
     if(pokeInfo){
         return(
             <Content>
-                <img src={pokeInfo.sprites.front_default} />
-                <b> {pokeInfo.name} </b>
-                {
-                    pokeInfo.types.map((type) => {
-                        return <p>{type.type.name}</p>
-                    })
-                }
+                <Image source={pokeInfo.sprites.front_default} />
+                <p>Nº{pokeInfo.id}</p>
+                <Name> {pokeInfo.name} </Name>
+                <Types> 
+                    {
+                        pokeInfo.types.map((type) => {
+                            return <Type name={type.type.name}>{type.type.name}</Type>
+                        })
+                    }
+                </Types>
             </Content>
         )
     }else{

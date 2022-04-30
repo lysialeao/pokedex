@@ -4,5 +4,5 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
-    grid-row-gap: 2em;    
+    grid-row-gap: 4rem;    
 `

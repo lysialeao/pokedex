@@ -27,6 +27,7 @@ export const Header = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 4rem;
 `;
 
 export const Form = styled.form`
