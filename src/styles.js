@@ -6,10 +6,11 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     background-color:#DCDCDC;
+    font-family: Roboto;
     
 `;
 
-export const Content = styled.div`{
+export const Content = styled.div`
     width: 100%;
     max-width: 80%;
     margin: 30px;
@@ -17,4 +18,40 @@ export const Content = styled.div`{
     padding: 20px;
     display:grid;
     grid-gap: 30px 20px;
-}`
+`;
+
+export const Header = styled.div`
+    width: 100%;
+    height: 8rem;
+    background-image: url(${props => props.image});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+`;
+
+export const Form = styled.form`
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+`
+
+export const Input = styled.input`
+    display: block;
+    width: auto;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    background: #eee;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        // border-color: black;
+        background: #fff;
+        // box-shadow: 0 0 0 2px #C0C0C0;
+    }
+
+`
