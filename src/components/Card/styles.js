@@ -13,6 +13,7 @@ export const Content = styled.div`
     flex-direction: column;
     padding: 1rem;
     gap:0.5rem;
+    // flex: 1 1 12rem;
 
     & p {
         color: #97a2af;

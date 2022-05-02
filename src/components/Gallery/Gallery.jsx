@@ -3,17 +3,17 @@ import React from 'react';
 import { Container } from './styles.js';
 import Card from '../Card/Card';
 
-const Gallery = ({pokelist}) => {
+const Gallery = ({pokelist, list}) => {
 
    return(
       <Container> 
          {
-            pokelist? pokelist.map((pokemon, index) => {
+            list ? pokelist.map((pokemon, index) => {
                return (
                   <Card key={index} pokemon={pokemon}/>
                )
-               return (<p key={index}>{pokemon.name}</p>)
-            }) : null
+               
+            }) : <Card key={pokelist} pokemon={pokelist}/>
          }
       </Container>
    )

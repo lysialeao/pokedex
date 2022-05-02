@@ -7,6 +7,8 @@ export const Container = styled.div`
     align-items: center;
     background-color:#f6f8fc;
     font-family: Roboto;
+    margin: 0 auto;
+    margin: 0;
     
 `;
 
@@ -46,13 +48,15 @@ export const Input = styled.input`
     background: #eee;
     transition: 0.2s;
     margin-bottom: 0.5rem;
+    border:none;
+    box-shadow: 0 0 1em #C0C0C0;
 
     &:focus,
     &:hover {
         outline: none;
-        // border-color: black;
+        border:none;
         background: #fff;
-        // box-shadow: 0 0 0 2px #C0C0C0;
+        box-shadow: 0 0 0 2px #C0C0C0;
     }
 
 `

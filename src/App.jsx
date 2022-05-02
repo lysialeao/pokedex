@@ -19,55 +19,34 @@ const App = () =>  {
   const [ offset, setOffset ] = useState(0);
 
   useEffect(() => {
+    pokeapi.get(`pokemon/?limit=${LIMIT}&offset=${offset}`)
+      .then((response) => setPokemons(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
+  }, []);
 
-    // const query = {
-    //   page: {
-    //     limit: LIMIT,
-    //     offset,
-    //   }
-    // };
-
-    // if(text){
-    //   query.pokemon = {
-    //     text
-    //   }
-    // }
-
-   
-
-      pokeapi.get(`pokemon/?limit=${LIMIT}&offset=${offset}`)
-      // pokeapi.get(`pokemon/?${text}limit=${LIMIT}&offset=${offset}`)
-        .then((response) => setPokemons(response.data))
-        .catch((err) => {
-          console.error("ops! ocorreu um erro" + err);
-       });
-    
-
-  }, [text, offset])
+  useEffect(() => {
+    pokeapi.get(`pokemon/${text}`)
+      .then((response) => setPokemons(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
+  }, [text]);
   
   return (
     <Container>
       <Content>
-         <Header image={pokedex} />
-         {/* <Form> 
-
+        <Header image={pokedex} />
         <Input
           placeholder="Search your Pokémon!"
           type="text"
           value={text}
           onChange={(search) => setText(search.target.value)}
         /> 
-        <Input
-          placeholder="E-mail"
-          type="text"
-          name="email"
-        /> 
-         </Form> */}
-        
-        <Gallery pokelist={pokemons.results} />
-        {/* {pokemons && ( reutnr Pagination)} */}
+
+        <Gallery pokelist={pokemons.results ? pokemons.results : pokemons} list={ pokemons.results ? true : false} />
         <Pagination limit={LIMIT} total={pokemons.count} offset={offset} setOffset={setOffset}></Pagination>
-      
       </Content>
     </Container>
   )
