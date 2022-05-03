@@ -1,6 +1,7 @@
+import './reset.css'
 import { useState } from 'react'
 
-import { Container, Content, Header, Form, Input } from './styles.js'
+import { Container, Content, Header, Input } from './styles.js'
 import Gallery from './components/Gallery/Gallery'
 
 import pokedex from './public/pokedex.png'
@@ -38,13 +39,7 @@ const App = () =>  {
     <Container>
       <Content>
         <Header image={pokedex} />
-        <Input
-          placeholder="Search your Pokémon!"
-          type="text"
-          value={text}
-          onChange={(search) => setText(search.target.value)}
-        /> 
-
+        <Input placeholder="Search your Pokémon!" type="text" value={text} onChange={(search) => setText(search.target.value)}/> 
         <Gallery pokelist={pokemons.results ? pokemons.results : pokemons} list={ pokemons.results ? true : false} />
         <Pagination limit={LIMIT} total={pokemons.count} offset={offset} setOffset={setOffset}></Pagination>
       </Content>

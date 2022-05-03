@@ -14,6 +14,7 @@ export const Content = styled.div`
     padding: 1rem;
     gap:0.5rem;
     // flex: 1 1 12rem;
+    // margin-top: 5rem;
 
     & p {
         color: #97a2af;
@@ -75,5 +76,6 @@ export const Image = styled.div`
     background-image: url(${props => props.source});
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 
 `
