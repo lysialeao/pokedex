@@ -19,6 +19,17 @@ Depois,
 
 Assim, o projeto estará rodando em ambiente local.
 
+## Design
+### Listagem e paginação
+
+![PrintScreen of HomePage](https://github.com/lysialeao/pokedex/blob/main/imagem_2022-05-03_194542849.png)
+![](https://github.com/lysialeao/pokedex/blob/main/imagem_2022-05-03_194644323.png)
+
+### Barra de pesquisa e modal 
+![](https://github.com/lysialeao/pokedex/blob/main/imagem_2022-05-03_194748067.png)
+![](https://github.com/lysialeao/pokedex/blob/main/imagem_2022-05-03_194800305.png)
+
+
 ## Ações futuras
 
 
