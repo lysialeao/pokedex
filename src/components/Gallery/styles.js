@@ -5,5 +5,6 @@ export const Container = styled.div`
     // flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
-    grid-row-gap: 4rem;    
+    grid-row-gap: 4rem;
+    margin-top: 2rem;    
 `

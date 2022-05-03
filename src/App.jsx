@@ -24,7 +24,7 @@ const App = () =>  {
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
-  }, []);
+  }, [offset]);
 
   useEffect(() => {
     pokeapi.get(`pokemon/${text}`)
