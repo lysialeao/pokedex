@@ -19,5 +19,10 @@ Depois,
 
 Assim, o projeto estará rodando em ambiente local.
 
+## Ações futuras
+
+
+
+
 
 
