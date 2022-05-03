@@ -2,7 +2,7 @@
 
 ## Sobre a aplicação
 
-Essa aplicação consiste em uma Pokédex. Na tela inicial há a listagem de pokemons com algumas informações como nome, número, foto e habilidades do Pokémon. São mostrados 20 pokémons por página, e a navegação entre página pode ocorrer selecionano os botões de próximo e anterior no final da tela. Há também um filtro de texto, que pode receber um nome do pokémon específico para ser listado em tela.
+Essa aplicação consiste em uma Pokédex. Na tela inicial há a listagem de pokemons com algumas informações como nome, número, foto e habilidades do Pokémon. São listados 20 pokémons por página e a navegação entre páginas pode ocorrer selecionando os botões de próximo ou anterior no final da tela. Há também um filtro de texto, que pode receber um nome do pokémon específico para ser listado em tela.
 
 ## Tecnologias
 
@@ -17,12 +17,12 @@ Depois,
 
 `npm run dev`
 
-Assim, o projeto estará rodando em ambiente local.
+Assim, o projeto estará rodando em ambiente local no endereço localhost:3000.
 
 ## Design
 ### Listagem e paginação
 
-![PrintScreen of HomePage](https://github.com/lysialeao/pokedex/blob/main/imagem_2022-05-03_194542849.png)
+![](https://github.com/lysialeao/pokedex/blob/main/imagem_2022-05-03_194542849.png)
 ![](https://github.com/lysialeao/pokedex/blob/main/imagem_2022-05-03_194644323.png)
 
 ### Barra de pesquisa e modal 
@@ -31,6 +31,13 @@ Assim, o projeto estará rodando em ambiente local.
 
 
 ## Ações futuras
+
+Como futuras implementações, serão tratados:
+  Adequamento da página conforme o dispositivo(responsividade)
+  Filtro por tipos de pokemon
+  Exibir mais informações a respeito do pokémon dentro do componente modal
+  
+Além da refatoração de código, afins de aprimoramento :)
 
 
 
