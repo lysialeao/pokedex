@@ -17,7 +17,7 @@ Depois,
 
 `npm run dev`
 
-Assim, o projeto estará rodando em ambiente local no endereço localhost:3000.
+Assim, o projeto estará rodando em ambiente local no endereço **localhost:3000.**
 
 ## Design
 ### Listagem e paginação
@@ -33,9 +33,12 @@ Assim, o projeto estará rodando em ambiente local no endereço localhost:3000.
 ## Ações futuras
 
 Como futuras implementações, serão tratados:
-  Adequamento da página conforme o dispositivo(responsividade)
-  Filtro por tipos de pokemon
-  Exibir mais informações a respeito do pokémon dentro do componente modal
+
+  * Adequamento da página conforme o dispositivo(responsividade)
+  
+  * Filtro por tipos de pokemon
+  
+  * Exibir mais informações a respeito do pokémon dentro do componente modal
   
 Além da refatoração de código, afins de aprimoramento :)
 
