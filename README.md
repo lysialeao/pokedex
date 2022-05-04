@@ -2,7 +2,7 @@
 
 ## Sobre a aplicação
 
-Essa aplicação consiste em uma Pokédex. Na tela inicial há a listagem de pokemons com algumas informações como nome, número, foto e habilidades do Pokémon. São listados 20 pokémons por página e a navegação entre páginas pode ocorrer selecionando os botões de próximo ou anterior no final da tela. Há também um filtro de texto, que pode receber um nome do pokémon específico para ser listado em tela.
+Essa aplicação consiste em uma Pokédex. Na tela inicial há a listagem de pokemons com algumas informações como nome, número, imagem e habilidades do Pokémon. São listados 20 pokémons por página e a navegação entre páginas pode ocorrer selecionando os botões númericos ou de próximo e anterior no final da tela. Há também um filtro de texto, que pode receber um nome do pokémon específico para ser listado em tela.
 
 ## Tecnologias
 
